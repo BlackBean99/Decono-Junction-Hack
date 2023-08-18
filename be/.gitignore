@@ -1,0 +1,9 @@
+.idea
+.gradle
+*.properties
+.DS_store
+*.jar
+gradlew
+gradlew.bat
+HELP.md
+settings.gradle
