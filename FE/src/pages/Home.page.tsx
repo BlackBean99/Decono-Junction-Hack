@@ -6,6 +6,7 @@ import VegiOptionSelectSection from "@/components/sections/VegiOptionSelectSecti
 import LinearProgress from "@/components/common/LinearProgress";
 import { useState } from "react";
 import CookingSection from "@/components/sections/CookingSection";
+import OrderButton from "@/components/order/OrderButton";
 
 const MainPage = () => {
   const [progress, setProgress] = useState(0);
@@ -34,6 +35,7 @@ const MainPage = () => {
         </SwiperSlide>
         <SwiperSlide className="bg-amber-900"></SwiperSlide>
       </Swiper>
+      <OrderButton />
     </div>
   );
 };

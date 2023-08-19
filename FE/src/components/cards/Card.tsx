@@ -31,9 +31,13 @@ const Card: FC<CardProps> = ({ image, price, title }) => {
   return (
     <button
       onClick={onCardClick}
-      className="flex gap-2 flex-col items-center p-4 text-3xl"
+      className="flex gap-2 flex-col items-center text-3xl"
     >
-      <img className="rounded-md" src={image} alt={title} />
+      <img
+        className="object-cover rounded-md h-full max-h-96 w-full"
+        src={image}
+        alt={title}
+      />
       <div className="font-semibold">{title}</div>
       <div>{price}</div>
     </button>
@@ -45,9 +49,18 @@ interface CardGroupProps {
 }
 
 const CardGroup: FC<CardGroupProps> = ({ data }) => {
-  return data.map((menu, index) => (
-    <Card key={index} image={menu.img} price={menu.price} title={menu.title} />
-  ));
+  return (
+    <div className="grid grid-cols-4 gap-4 p-12">
+      {data.map((menu, index) => (
+        <Card
+          key={index}
+          image={menu.img}
+          price={menu.price}
+          title={menu.title}
+        />
+      ))}
+    </div>
+  );
 };
 
 export default CardGroup;

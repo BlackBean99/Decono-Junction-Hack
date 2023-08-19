@@ -19,13 +19,11 @@ const VegiOptionSelectSection = () => {
         </div>
         <div className="grid grid-cols-2 gap-4 font-medium text-2xl">
           <button
-            className="col-span-2 border bg-[#B4B4B4] border-[#B4B4B4] rounded-md py-4"
+            className="col-span-2 border bg-[#1F732C] border-[#B4B4B4] rounded-md py-4 text-white"
             onClick={() => onSelectedOption(KIOSK.SHOW_ALL.TITLE)}
           >
             <div>{KIOSK.SHOW_ALL.TITLE}</div>
-            <div className="text-[#4E4E4E] text-base">
-              {KIOSK.SHOW_ALL.SUBTITLE}
-            </div>
+            <div className="text-base">{KIOSK.SHOW_ALL.SUBTITLE}</div>
           </button>
           {KIOSK.VEGI_OPTIONS.map((option, index) => (
             <button

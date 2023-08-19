@@ -1,4 +1,12 @@
+export const APP_NAME = "Vegi";
+
 export const FIRST_SECTION_TEXT = "Touch the screen to see the menu";
+
+export const CLOSE_ALERT =
+  "If you continue to exit the menu,\n all of the selected menus will be initialized.\nDo you still want to exit the menu?";
+
+export const CLOSE = "Close";
+export const CONFIRM = "Confirm";
 
 export const KIOSK = {
   SELECT_OPTION: "What type of vegetarian are you?",
@@ -30,42 +38,42 @@ export const COOKING_MENU = [
     title: "Plant-based Steak",
     type: "Steak",
     vegiType: ["Lacto", "Ovo", "Lacto-ovo", "Presco", "Pollo", "Flexitarian"],
-    img: "/images/A5AIHovo1xwuEjs7V8-aKpZCSWY2gN3mZEPR9fymaez_J7ufmI9B7YyDBu6kZy9TC9VWJatXVJZbDjcYLO2S8Q.webp",
+    img: "/images/Plant-based Steak.png",
     price: 5000,
   },
   {
     title: "Black Bean Veggie Steak",
     type: "Steak",
     vegiType: ["Ovo", "Lacto-ovo", "Presco", "Pollo", "Flexitarian"],
-    img: "/images/A5AIHovo1xwuEjs7V8-aKpZCSWY2gN3mZEPR9fymaez_J7ufmI9B7YyDBu6kZy9TC9VWJatXVJZbDjcYLO2S8Q.webp",
+    img: "/images/Black Bean Veggie Steak.png",
     price: 5000,
   },
   {
     title: "Salmon Steak",
     type: "Steak",
     vegiType: ["Presco", "Pollo", "Flexitarian"],
-    img: "/images/A5AIHovo1xwuEjs7V8-aKpZCSWY2gN3mZEPR9fymaez_J7ufmI9B7YyDBu6kZy9TC9VWJatXVJZbDjcYLO2S8Q.webp",
+    img: "/images/Salmon Steak.png",
     price: 5000,
   },
   {
     title: "Vegan Bolognese Pasta",
     type: "Pasta",
     vegiType: ["Lacto", "Ovo", "Lacto-ovo", "Presco", "Pollo", "Flexitarian"],
-    img: "/images/A5AIHovo1xwuEjs7V8-aKpZCSWY2gN3mZEPR9fymaez_J7ufmI9B7YyDBu6kZy9TC9VWJatXVJZbDjcYLO2S8Q.webp",
+    img: "/images/Vegan Bolognese Pasta.png",
     price: 5000,
   },
   {
     title: "Basil Pesto Pasta",
     type: "Pasta",
     vegiType: ["Lacto", "Ovo", "Lacto-ovo", "Presco", "Pollo", "Flexitarian"],
-    img: "/images/A5AIHovo1xwuEjs7V8-aKpZCSWY2gN3mZEPR9fymaez_J7ufmI9B7YyDBu6kZy9TC9VWJatXVJZbDjcYLO2S8Q.webp",
+    img: "/images/Basil Pesto Pasta.png",
     price: 5000,
   },
   {
     title: "Aglio e Olio",
     type: "Pasta",
     vegiType: ["Lacto", "Ovo", "Lacto-ovo", "Presco", "Pollo", "Flexitarian"],
-    img: "/images/A5AIHovo1xwuEjs7V8-aKpZCSWY2gN3mZEPR9fymaez_J7ufmI9B7YyDBu6kZy9TC9VWJatXVJZbDjcYLO2S8Q.webp",
+    img: "/images/Aglio e Olio.png",
     price: 5000,
   },
   {
@@ -80,35 +88,35 @@ export const COOKING_MENU = [
       "Pollo",
       "Flexitarian",
     ],
-    img: "/images/A5AIHovo1xwuEjs7V8-aKpZCSWY2gN3mZEPR9fymaez_J7ufmI9B7YyDBu6kZy9TC9VWJatXVJZbDjcYLO2S8Q.webp",
+    img: "/images/Fruit Salad.png",
     price: 5000,
   },
   {
     title: "Salmon Salad",
     type: "Salad",
     vegiType: ["Presco", "Pollo", "Flexitarian"],
-    img: "/images/A5AIHovo1xwuEjs7V8-aKpZCSWY2gN3mZEPR9fymaez_J7ufmI9B7YyDBu6kZy9TC9VWJatXVJZbDjcYLO2S8Q.webp",
+    img: "/images/Salmon Salad.png",
     price: 5000,
   },
   {
     title: "Pumpkin Pizza",
     type: "Pizza",
     vegiType: ["Lacto", "Ovo", "Lacto-ovo", "Presco", "Pollo", "Flexitarian"],
-    img: "/images/A5AIHovo1xwuEjs7V8-aKpZCSWY2gN3mZEPR9fymaez_J7ufmI9B7YyDBu6kZy9TC9VWJatXVJZbDjcYLO2S8Q.webp",
+    img: "/images/Pumpkin Pizza.png",
     price: 5000,
   },
   {
     title: "Vegan Sandwich",
     type: "Sandwich",
     vegiType: ["Lacto", "Ovo", "Lacto-ovo", "Presco", "Pollo", "Flexitarian"],
-    img: "/images/A5AIHovo1xwuEjs7V8-aKpZCSWY2gN3mZEPR9fymaez_J7ufmI9B7YyDBu6kZy9TC9VWJatXVJZbDjcYLO2S8Q.webp",
+    img: "/images/Vegan Sandwich.png",
     price: 5000,
   },
   {
     title: "Beef Taco",
     type: "Sandwich",
     vegiType: ["Flexitarian"],
-    img: "/images/A5AIHovo1xwuEjs7V8-aKpZCSWY2gN3mZEPR9fymaez_J7ufmI9B7YyDBu6kZy9TC9VWJatXVJZbDjcYLO2S8Q.webp",
+    img: "/images/Beef Taco.png",
     price: 5000,
   },
 ];
