@@ -7,7 +7,11 @@ import CookingSection from "@/components/sections/CookingSection";
 
 const MainPage = () => {
   return (
-    <Swiper className="w-screen h-screen" slidesPerView={1}>
+    <Swiper
+      className="w-screen h-screen"
+      slidesPerView={1}
+      allowTouchMove={false}
+    >
       <SwiperSlide>
         <Section1 />
       </SwiperSlide>

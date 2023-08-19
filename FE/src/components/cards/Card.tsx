@@ -22,13 +22,8 @@ interface CardGroupProps {
 }
 
 const CardGroup: FC<CardGroupProps> = ({ data }) => {
-  return data.map((menu) => (
-    <Card
-      key={menu.title}
-      image={menu.img}
-      price={menu.price}
-      title={menu.title}
-    />
+  return data.map((menu, index) => (
+    <Card key={index} image={menu.img} price={menu.price} title={menu.title} />
   ));
 };
 
