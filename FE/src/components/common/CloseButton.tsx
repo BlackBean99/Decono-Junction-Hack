@@ -20,7 +20,7 @@ const CloseButton = () => {
 
   return (
     <>
-      <button onClick={onOpen} className="p-4">
+      <button onClick={onOpen} className="p-4 mr-12">
         <img src="/icons/multiply.svg" alt="close" />
       </button>
       <Modal

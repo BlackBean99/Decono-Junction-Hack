@@ -14,7 +14,7 @@ const VegiOptionSelectSection = () => {
   return (
     <div className="w-full h-full flex justify-center items-center">
       <div className="w-[51.5rem]">
-        <div className="text-3xl my-8 font-bold text-center">
+        <div className="text-4xl my-12 font-bold text-center text-[#1F732C]">
           {KIOSK.SELECT_OPTION}
         </div>
         <div className="grid grid-cols-2 gap-4 font-medium text-2xl">

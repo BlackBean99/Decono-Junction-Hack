@@ -9,7 +9,7 @@ const BackButton = () => {
   };
 
   return (
-    <button onClick={onBackButtonClick}>
+    <button onClick={onBackButtonClick} className="flex p-4 w-[20rem]">
       <img src="/icons/chevron.backward.svg" alt="back" />
       <div>{APP_NAME}</div>
     </button>

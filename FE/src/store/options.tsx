@@ -1,6 +1,6 @@
 import { atom } from "jotai";
 
-export const VegiOptionAtom = atom("");
+export const VegiOptionAtom = atom("All");
 
 interface CookingOptionAtom {
   title: string;

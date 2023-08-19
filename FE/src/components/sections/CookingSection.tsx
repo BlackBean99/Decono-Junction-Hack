@@ -1,16 +1,23 @@
-import { COOKING_MENU } from "@/constants/main.en";
-import CardGroup from "../cards/Card";
+import CardGroup from "../cooking/Card";
 import BackButton from "../common/BackButton";
 import CloseButton from "../common/CloseButton";
+import CookingNavbar from "../cooking/Navbar";
+import CenterTitle from "../cooking/CenterTitle";
 
 const CookingSection = () => {
   return (
-    <div className="w-full h-full">
-      <div className="flex w-full justify-between">
+    <div className="flex w-full h-full">
+      <div className="flex flex-col pt-6">
         <BackButton />
-        <CloseButton />
+        <CookingNavbar />
       </div>
-      <CardGroup data={COOKING_MENU} />
+      <div className="flex flex-col">
+        <div className="flex justify-center items-baseline py-6">
+          <CenterTitle />
+          <CloseButton />
+        </div>
+        <CardGroup />
+      </div>
     </div>
   );
 };

@@ -154,6 +154,7 @@ cython_debug/
 
 node_modules/
 images/
+fonts/
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
