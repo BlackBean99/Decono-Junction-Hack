@@ -1,6 +1,6 @@
 import { useSwiper } from "swiper/react";
 
-const Page1 = () => {
+const Section1 = () => {
   const sipwer = useSwiper();
   return (
     <div className="w-full h-full bg-black text-white flex justify-evenly items-center text-4xl">
@@ -12,4 +12,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default Section1;
