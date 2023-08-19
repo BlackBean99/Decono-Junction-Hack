@@ -1,10 +1,10 @@
 import { KIOSK } from "@/constants/main.en";
-import { VegiOption } from "@/store/options";
+import { VegiOptionAtom } from "@/store/options";
 import { useSetAtom } from "jotai";
 import { useSwiper } from "swiper/react";
 
 const VegiOptionSelectSection = () => {
-  const setOption = useSetAtom(VegiOption);
+  const setOption = useSetAtom(VegiOptionAtom);
   const swiper = useSwiper();
   const onSelectedOption = (value: string) => {
     setOption(value);
@@ -13,7 +13,7 @@ const VegiOptionSelectSection = () => {
 
   return (
     <div className="w-full h-full flex justify-center items-center">
-      <div className="w-[48rem]">
+      <div className="w-[51.5rem]">
         <div className="text-3xl my-8 font-bold text-center">
           {KIOSK.SELECT_OPTION}
         </div>
