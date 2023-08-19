@@ -12,7 +12,7 @@ export const KIOSK = {
   SELECT_OPTION: "What type of vegetarian are you?",
   IS_FIRST_VEGI: "",
   SHOW_ALL: {
-    TITLE: "ALL",
+    TITLE: "All",
     SUBTITLE: "I would like to see the menu without choosing",
   },
   VEGI_OPTIONS: [
@@ -159,5 +159,50 @@ export const COOKING_MENU = [
     vegiType: ["Flexitarian"],
     img: "/images/Beef Taco.png",
     price: 5000,
+  },
+];
+
+export const DETAIL_MENU = [
+  {
+    TITLE: "Plant-Based Meat",
+    SUBTITLE: "choose the ingredient that you wish to take.",
+    SELECT: [
+      "Black Bean Only",
+      "Black Bean + Mushroom (+1,000)",
+      "Black Bean + Pumpkin",
+      "Black Bean + Wheat",
+    ],
+  },
+  {
+    TITLE: "Bean Content",
+    SUBTITLE: "choose the ingredient that you wish to take.",
+    SELECT: ["30%", "40%", "50%", "60%"],
+  },
+  {
+    TITLE: "Degree of Doness",
+    SUBTITLE: "choose the content of bean in plant based meat",
+    SELECT: ["Rare", "Medium Rare", "Medium", "Medium Well", "Well Done"],
+  },
+  {
+    TITLE: "Side menu",
+    SUBTITLE: "what goes well with plant based steak?",
+    SELECT: [
+      "Baked Sweet Potato Wedges (+6,500)",
+      "Garlic Mashed Potatoes (+6,000)",
+      "Mediterranean Chickpea Wedge Salad (+12,000)",
+      "Creamy Brussels Sprouts Bake (+5,400)",
+      "Steamed Mushrooms (+3,500)",
+    ],
+  },
+  {
+    TITLE: "Sauce",
+    SUBTITLE: "what goes well with plant based steak?",
+    SELECT: [
+      "BBQ Sauce",
+      "Vegan Cashew Sauce",
+      "Vegan Pesto Sauce",
+      "Creamy Cilantro Sauce",
+      "Cashew Cream Sauce",
+    ],
   },
 ];

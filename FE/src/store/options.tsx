@@ -9,4 +9,9 @@ interface CookingOptionAtom {
   vegiType: string;
 }
 
-export const CookingOptionAtom = atom<CookingOptionAtom[]>([]);
+export const CookingOptionAtom = atom<CookingOptionAtom>({
+  title: "Plant-based Steak",
+  price: 0,
+  count: 1,
+  vegiType: "All",
+});

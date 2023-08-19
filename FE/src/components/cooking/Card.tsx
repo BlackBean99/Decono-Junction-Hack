@@ -19,15 +19,12 @@ const Card: FC<CardProps> = ({ image, price, title, isHide }) => {
 
   const onCardClick = () => {
     swiper.slideNext();
-    setCookingOption((prev) => [
-      ...prev,
-      {
-        title,
-        price,
-        count: 1,
-        vegiType: vegiOption,
-      },
-    ]);
+    setCookingOption({
+      title: "Plant-based Steak",
+      price: 0,
+      count: 1,
+      vegiType: vegiOption,
+    });
   };
 
   return (

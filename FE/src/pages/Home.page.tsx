@@ -6,6 +6,7 @@ import VegiOptionSelectSection from "@/components/sections/VegiOptionSelectSecti
 import { useState } from "react";
 import CookingSection from "@/components/sections/CookingSection";
 import OrderButton from "@/components/order/OrderButton";
+import DetailSection from "@/components/sections/DetailSection";
 
 const MainPage = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -33,7 +34,9 @@ const MainPage = () => {
         <SwiperSlide>
           <CookingSection />
         </SwiperSlide>
-        <SwiperSlide className="bg-amber-900"></SwiperSlide>
+        <SwiperSlide>
+          <DetailSection />
+        </SwiperSlide>
       </Swiper>
       <OrderButton isShow={activeIndex > 1} />
     </div>

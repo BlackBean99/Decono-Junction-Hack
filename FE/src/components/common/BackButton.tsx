@@ -1,7 +1,11 @@
-import { APP_NAME } from "@/constants/main.en";
+import { FC } from "react";
 import { useSwiper } from "swiper/react";
 
-const BackButton = () => {
+interface BackButtonProps {
+  isDefault?: boolean;
+}
+
+const BackButton: FC<BackButtonProps> = ({ isDefault = true }) => {
   const swiper = useSwiper();
 
   const onBackButtonClick = () => {
@@ -10,8 +14,14 @@ const BackButton = () => {
 
   return (
     <button onClick={onBackButtonClick} className="flex p-4 w-[20rem]">
-      <img src="/icons/chevron.backward.svg" alt="back" />
-      <div>{APP_NAME}</div>
+      <img
+        src={
+          isDefault
+            ? "/icons/chevron.backward.svg"
+            : "/icons/chevron.backward.white.svg"
+        }
+        alt="back"
+      />
     </button>
   );
 };
