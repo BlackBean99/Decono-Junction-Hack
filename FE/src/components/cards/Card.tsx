@@ -1,4 +1,4 @@
-import { COOKING_MENU } from "@/constants/main.ko";
+import { COOKING_MENU } from "@/constants/main.en";
 import { FC } from "react";
 
 interface CardProps {

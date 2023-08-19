@@ -1,4 +1,4 @@
-import { COOKING_MENU } from "@/constants/main.ko";
+import { COOKING_MENU } from "@/constants/main.en";
 import CardGroup from "../cards/Card";
 import { useSwiper } from "swiper/react";
 
@@ -6,8 +6,8 @@ const CookingSection = () => {
   const swipe = useSwiper();
 
   return (
-    <div>
-      <div className="grid grid-cols-4">
+    <div className="">
+      <div className="grid grid-cols-4 gap-4">
         <CardGroup data={COOKING_MENU} />
       </div>
       <button
