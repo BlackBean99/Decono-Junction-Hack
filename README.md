@@ -1,7 +1,9 @@
-# Decono-Junction-Hack
+# VEGET
 
-Junction Asia Hackathon
+A built-in Kiosk service in vegetarian restaurant encouraging features of cooking robot system to create a hostile environment for mechanical cooking
+
 ## 💻 Developers
+
 <table>
     <tr align="center">
         <td><B>PM</B></td>
@@ -35,3 +37,17 @@ Junction Asia Hackathon
         </td>
     </tr>
 </table>
+
+## ⚒️ Developer Environment
+
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=000000"/> <img src="https://img.shields.io/badge/eslint-4B32C3?style=for-the-badge&logo=eslint&logoColor=fffff"/> <img src="https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=ffffff"/> <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=ffffff"/> <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=ffffff"/>
+
+## 📌 Key Features
+
+<img src="img/4.png">
+
+<img src="img/5.png">
+
+<img src="img/7.png">
+
+<img src="img/8.png">
