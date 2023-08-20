@@ -22,9 +22,9 @@ const MainSection = () => {
       className="w-full h-full flex justify-center items-center"
       onClick={() => swipe.slideNext()}
     >
-      <div className="flex flex-col">
-        <div className="w-[40rem]">{View}</div>
-        <div className="text-xl font-light -translate-y-36">
+      <div className="flex flex-col items-center">
+        <div className="w-[16rem]">{View}</div>
+        <div className="text-xl font-light -translate-y-6">
           {FIRST_SECTION_TEXT}
         </div>
       </div>

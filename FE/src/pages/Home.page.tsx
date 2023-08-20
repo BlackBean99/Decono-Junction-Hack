@@ -19,26 +19,26 @@ const MainPage = () => {
         slidesPerView={1}
         allowTouchMove={false}
         speed={500}
+        loop={true}
         onSwiper={(swiper) => {
           swiper.on("slideChange", (e) => {
-            // setProgress((e.activeIndex / (e.slides.length - 1)) * 100);
             setActiveIndex(e.activeIndex);
           });
         }}
       >
-        <SwiperSlide>
+        <SwiperSlide className="bg-white">
           <MainSection />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="bg-white">
           <VegiOptionSelectSection />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="bg-white">
           <CookingSection />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="bg-white">
           <DetailSection />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="bg-white">
           <DoneSection />
         </SwiperSlide>
       </Swiper>
