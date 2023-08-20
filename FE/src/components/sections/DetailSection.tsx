@@ -2,7 +2,7 @@ import { CONFIRM, COOKING_MENU, DETAIL_MENU } from "@/constants/main.en";
 import { CookingOptionAtom } from "@/store/options";
 import { useAtomValue } from "jotai";
 import BackButton from "../common/BackButton";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Modal from "react-modal";
 import { useSwiper } from "swiper/react";
 import DetailRadio from "../common/DetailRadio";
@@ -12,6 +12,7 @@ const DetailSection = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectSource, setSelectSource] = useState<string>("");
   const swiper = useSwiper();
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   return (
     <>
@@ -48,7 +49,7 @@ const DetailSection = () => {
           </div>
         </div>
       </Modal>
-      <div className="overflow-auto w-full h-full">
+      <div className="overflow-auto w-full h-full" ref={scrollRef}>
         <div className="flex h-0 w-full">
           <div className="relative w-full">
             <div className="h-96 overflow-hidden w-full absolute -z-20">
@@ -61,7 +62,9 @@ const DetailSection = () => {
               />
             </div>
             <div className="top-0 absolute h-96 w-full bg-gradient-to-b from-black via-70% via-transparent to-black -z-20"></div>
-            <BackButton isDefault={false} />
+            <div className="py-2 translate-x-1 translate-y-2">
+              <BackButton isDefault={false} />
+            </div>
             <div className="text-white h-80 flex flex-col justify-between pl-12">
               <div>
                 <div className="text-4xl font-extrabold mb-2">{data.title}</div>
@@ -105,6 +108,7 @@ const DetailSection = () => {
                       <div className="flex flex-col gap-2 w-full justify-between">
                         {menu.SELECT.map((item, index) => (
                           <DetailRadio
+                            key={index}
                             index={index}
                             menu={menu}
                             item={item}
@@ -119,7 +123,10 @@ const DetailSection = () => {
                 <div className="w-full flex justify-center my-8">
                   <button
                     className="bg-[#1F732C] text-white py-4 px-36"
-                    onClick={() => swiper.slideNext()}
+                    onClick={() => {
+                      swiper.slideNext();
+                      scrollRef.current?.scrollTo(0, 0);
+                    }}
                   >
                     Place order
                   </button>
