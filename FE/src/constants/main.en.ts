@@ -47,21 +47,21 @@ export const COOKING_MENU = [
       "Flexitarian",
     ],
     img: "/images/Plant-based Steak.png",
-    price: 5000,
+    price: 22000,
   },
   {
     title: "Black Bean Veggie Steak",
     type: "Steak",
     vegiType: ["Ovo", "Lacto-ovo", "Pesco", "Pollo", "Flexitarian"],
     img: "/images/Black Bean Veggie Steak.png",
-    price: 5000,
+    price: 18000,
   },
   {
     title: "Salmon Steak",
     type: "Steak",
     vegiType: ["Pesco", "Pollo", "Flexitarian"],
     img: "/images/Salmon Steak.png",
-    price: 5000,
+    price: 25000,
   },
   {
     title: "Vegan Bolognese Pasta",
@@ -76,7 +76,7 @@ export const COOKING_MENU = [
       "Flexitarian",
     ],
     img: "/images/Vegan Bolognese Pasta.png",
-    price: 5000,
+    price: 16000,
   },
   {
     title: "Basil Pesto Pasta",
@@ -91,7 +91,7 @@ export const COOKING_MENU = [
       "Flexitarian",
     ],
     img: "/images/Basil Pesto Pasta.png",
-    price: 5000,
+    price: 18000,
   },
   {
     title: "Aglio e Olio",
@@ -106,7 +106,7 @@ export const COOKING_MENU = [
       "Flexitarian",
     ],
     img: "/images/Aglio e Olio.png",
-    price: 5000,
+    price: 15000,
   },
   {
     title: "Fruit Salad",
@@ -122,21 +122,21 @@ export const COOKING_MENU = [
       "Flexitarian",
     ],
     img: "/images/Fruit Salad.png",
-    price: 5000,
+    price: 8000,
   },
   {
     title: "Salmon Salad",
     type: "Salad",
     vegiType: ["Pesco", "Pollo", "Flexitarian"],
     img: "/images/Salmon Salad.png",
-    price: 5000,
+    price: 10000,
   },
   {
     title: "Pumpkin Pizza",
     type: "Pizza",
     vegiType: ["Lacto", "Ovo", "Lacto-ovo", "Pesco", "Pollo", "Flexitarian"],
     img: "/images/Pumpkin Pizza.png",
-    price: 5000,
+    price: 13000,
   },
   {
     title: "Vegan Sandwich",
@@ -151,14 +151,14 @@ export const COOKING_MENU = [
       "Flexitarian",
     ],
     img: "/images/Vegan Sandwich.png",
-    price: 5000,
+    price: 6000,
   },
   {
     title: "Beef Taco",
     type: "Sandwich",
     vegiType: ["Flexitarian"],
     img: "/images/Beef Taco.png",
-    price: 5000,
+    price: 8000,
   },
 ];
 

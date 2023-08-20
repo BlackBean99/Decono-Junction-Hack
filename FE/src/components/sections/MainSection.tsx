@@ -28,7 +28,7 @@ const MainSection = () => {
           {FIRST_SECTION_TEXT}
         </div>
       </div>
-      <div className="absolute bottom-12">
+      <div className="absolute bottom-24">
         <img src="/icons/VEGET.svg" alt="veget" />
       </div>
     </button>
