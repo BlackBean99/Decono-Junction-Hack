@@ -28,27 +28,35 @@ const CloseButton = () => {
         onRequestClose={() => setIsOpen(false)}
         style={{
           content: {
-            width: "30rem",
-            height: "20rem",
+            width: "20rem",
+            height: "12rem",
+            borderRadius: "1rem",
             position: "absolute",
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
+            padding: 0,
           },
           overlay: {
             zIndex: 100,
+            backdropFilter: "blur(10px) brightness(0.5)",
           },
         }}
       >
-        <div className="flex flex-col gap-4 items-center justify-center h-full">
-          <div>
-            {CLOSE_ALERT.split("\n").map((line, index) => (
-              <div key={index}>{line}</div>
-            ))}
+        <div className="flex flex-col items-center justify-center h-full">
+          <div className="flex h-full justify-center items-center flex-col flex-1 px-8 text-center font-light">
+            {CLOSE_ALERT}
           </div>
-          <div className="flex gap-4">
-            <button onClick={() => setIsOpen(false)}>{CLOSE}</button>
-            <button onClick={onClose}>{CONFIRM}</button>
+          <div className="flex w-full border-t text-[#1F732C] font-semibold">
+            <button
+              className="flex-1 border-r p-4"
+              onClick={() => setIsOpen(false)}
+            >
+              {CLOSE}
+            </button>
+            <button className="flex-1 p-4 " onClick={onClose}>
+              {CONFIRM}
+            </button>
           </div>
         </div>
       </Modal>

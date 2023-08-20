@@ -7,6 +7,7 @@ import { useState } from "react";
 import CookingSection from "@/components/sections/CookingSection";
 import OrderButton from "@/components/order/OrderButton";
 import DetailSection from "@/components/sections/DetailSection";
+import DoneSection from "@/components/sections/DoneSection";
 
 const MainPage = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -37,8 +38,11 @@ const MainPage = () => {
         <SwiperSlide>
           <DetailSection />
         </SwiperSlide>
+        <SwiperSlide>
+          <DoneSection />
+        </SwiperSlide>
       </Swiper>
-      <OrderButton isShow={activeIndex > 1} />
+      <OrderButton isShow={activeIndex > 1 && activeIndex < 3} />
     </div>
   );
 };

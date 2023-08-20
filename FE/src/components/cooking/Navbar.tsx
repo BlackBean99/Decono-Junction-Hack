@@ -8,10 +8,10 @@ const CookingNavbar = () => {
   const [navbar, setNavbar] = useAtom(VegiOptionAtom);
 
   return (
-    <div className="flex flex-col text-xl px-6 pt-6">
+    <div className="flex flex-col text-xl pl-6 pr-12 pt-6 w-[14rem]">
       {[{ TITLE: "All" }, ...data].map((item, index) => (
         <button
-          className={classnames("text-left p-6", {
+          className={classnames("text-left p-6 rounded-md", {
             "bg-[#1F732C] text-white": navbar === item.TITLE,
           })}
           key={index}

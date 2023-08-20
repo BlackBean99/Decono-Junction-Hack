@@ -18,13 +18,15 @@ const Card: FC<CardProps> = ({ image, price, title, isHide }) => {
   const setCookingOption = useSetAtom(CookingOptionAtom);
 
   const onCardClick = () => {
-    swiper.slideNext();
-    setCookingOption({
-      title: "Plant-based Steak",
-      price: 0,
-      count: 1,
-      vegiType: vegiOption,
-    });
+    if (title === "Plant-based Steak") {
+      swiper.slideNext();
+      setCookingOption({
+        title: "Plant-based Steak",
+        price: 0,
+        count: 1,
+        vegiType: vegiOption,
+      });
+    }
   };
 
   return (
@@ -32,18 +34,19 @@ const Card: FC<CardProps> = ({ image, price, title, isHide }) => {
       onClick={onCardClick}
       className={classnames("flex gap-4 flex-col items-center text-xl", {
         "grayscale opacity-50": isHide,
+        "cursor-default": title !== "Plant-based Steak",
       })}
     >
       <img
-        className="object-cover rounded-lg h-full max-h-64 w-full"
+        className="object-cover h-full max-h-64 w-full"
         src={image}
         alt={title}
       />
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col">
         <div className="font-semibold">{title}</div>
         <div>{`${price.toLocaleString("KR", {
           maximumSignificantDigits: 3,
-        })} WON`}</div>
+        })} ₩`}</div>
       </div>
     </button>
   );
@@ -56,9 +59,7 @@ const CardGroup = () => {
     <div className="h-full w-full overflow-auto border-t pt-6 border-[#C1C1C1]">
       <div className="flex h-0">
         <div className="grid grid-cols-3 gap-4 pl-6 pr-24">
-          {COOKING_MENU.sort((_, b) =>
-            b.vegiType.findIndex((type) => type === navbarValue)
-          ).map((menu, index) => (
+          {COOKING_MENU.map((menu, index) => (
             <Card
               key={index}
               image={menu.img}

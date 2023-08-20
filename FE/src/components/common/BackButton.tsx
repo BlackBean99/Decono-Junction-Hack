@@ -13,7 +13,7 @@ const BackButton: FC<BackButtonProps> = ({ isDefault = true }) => {
   };
 
   return (
-    <button onClick={onBackButtonClick} className="flex p-4 w-[20rem]">
+    <button onClick={onBackButtonClick} className="flex ml-4 p-4">
       <img
         src={
           isDefault

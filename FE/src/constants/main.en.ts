@@ -172,16 +172,19 @@ export const DETAIL_MENU = [
       "Black Bean + Pumpkin",
       "Black Bean + Wheat",
     ],
+    DEFAULT: "Black Bean Only",
   },
   {
     TITLE: "Bean Content",
     SUBTITLE: "choose the ingredient that you wish to take.",
     SELECT: ["30%", "40%", "50%", "60%"],
+    DEFAULT: "50%",
   },
   {
     TITLE: "Degree of Doness",
     SUBTITLE: "choose the content of bean in plant based meat",
     SELECT: ["Rare", "Medium Rare", "Medium", "Medium Well", "Well Done"],
+    DEFAULT: "Medium",
   },
   {
     TITLE: "Side menu",
@@ -204,5 +207,7 @@ export const DETAIL_MENU = [
       "Creamy Cilantro Sauce",
       "Cashew Cream Sauce",
     ],
+    DEFAULT: "BBQ Sauce",
+    ALERT_SELECT: ["Vegan Cashew Sauce", "Vegan Pesto Sauce"],
   },
 ];
